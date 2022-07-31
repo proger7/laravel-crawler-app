@@ -1,0 +1,50 @@
+{
+    "name": "ondram/ci-detector",
+    "description": "Detect current continuous integration server and provide unified access to properties of current build",
+    "keywords": [
+        "continuous integration",
+        "adapter",
+        "interface",
+        "appveyor",
+        "bamboo",
+        "circleci",
+        "codeship",
+        "continuousphp",
+        "drone",
+        "gitlab",
+        "jenkins",
+        "teamcity",
+        "travis"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ondřej Machulda",
+            "email": "ondrej.machulda@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OndraM\\CiDetector\\": "src/"
+        }
+    },
+    "require": {
+        "php" : "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4",
+        "friendsofphp/php-cs-fixer": "^2.7",
+        "phpstan/phpstan-shim": "^0.9.1"
+    },
+    "scripts": {
+        "all": [
+            "@analyze",
+            "./vendor/bin/phpunit --colors=always"
+        ],
+        "analyze": [
+            "./vendor/bin/php-cs-fixer fix --diff --dry-run -vvv --ansi",
+            "./vendor/bin/phpstan.phar analyze ./src ./tests --level 7 --ansi"
+        ]
+    }
+}

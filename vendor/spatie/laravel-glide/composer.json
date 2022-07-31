@@ -1,0 +1,45 @@
+{
+    "name": "spatie/laravel-glide",
+    "description": "Easily convert images with Glide",
+    "homepage": "https://github.com/spatie/laravel-glide",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "~5.8.0",
+        "league/glide": "^1.0"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.*",
+        "orchestra/testbench": "~3.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\Glide\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\Glide\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\Glide\\GlideServiceProvider"
+            ],
+            "aliases": {
+                "GlideImage": "Spatie\\Glide\\GlideImageFacade"
+            }
+        }
+    }
+}

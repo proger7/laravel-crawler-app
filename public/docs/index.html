@@ -1,0 +1,1997 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://localhost/docs/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>general</h1>
+<!-- START_c6c5c00d6ac7f771f157dff4a2889b1a -->
+<h2>_debugbar/open</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/_debugbar/open" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/_debugbar/open");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": ""
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET _debugbar/open</code></p>
+<!-- END_c6c5c00d6ac7f771f157dff4a2889b1a -->
+<!-- START_7b167949c615f4a7e7b673f8d5fdaf59 -->
+<h2>Return Clockwork output</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/_debugbar/clockwork/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/_debugbar/clockwork/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": ""
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET _debugbar/clockwork/{id}</code></p>
+<!-- END_7b167949c615f4a7e7b673f8d5fdaf59 -->
+<!-- START_01a252c50bd17b20340dbc5a91cea4b7 -->
+<h2>_debugbar/telescope/{id}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/_debugbar/telescope/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/_debugbar/telescope/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": ""
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET _debugbar/telescope/{id}</code></p>
+<!-- END_01a252c50bd17b20340dbc5a91cea4b7 -->
+<!-- START_5f8a640000f5db43332951f0d77378c4 -->
+<h2>Return the stylesheets for the Debugbar</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/_debugbar/assets/stylesheets" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/_debugbar/assets/stylesheets");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": ""
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET _debugbar/assets/stylesheets</code></p>
+<!-- END_5f8a640000f5db43332951f0d77378c4 -->
+<!-- START_db7a887cf930ce3c638a8708fd1a75ee -->
+<h2>Return the javascript for the Debugbar</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/_debugbar/assets/javascript" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/_debugbar/assets/javascript");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": ""
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET _debugbar/assets/javascript</code></p>
+<!-- END_db7a887cf930ce3c638a8708fd1a75ee -->
+<!-- START_0973671c4f56e7409202dc85c868d442 -->
+<h2>Forget a cache key</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/_debugbar/cache/1/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/_debugbar/cache/1/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE _debugbar/cache/{key}/{tags?}</code></p>
+<!-- END_0973671c4f56e7409202dc85c868d442 -->
+<!-- START_739e407ef7a935c465ac4075153117be -->
+<h2>graphql</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/graphql" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphql");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">[]</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET graphql</code></p>
+<!-- END_739e407ef7a935c465ac4075153117be -->
+<!-- START_3a2e8bf296afcbc9d26307e4ca84cfb4 -->
+<h2>graphql</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/graphql" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphql");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST graphql</code></p>
+<!-- END_3a2e8bf296afcbc9d26307e4ca84cfb4 -->
+<!-- START_54e29140897474c4973797a7a3f24ef1 -->
+<h2>graphql/{default}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/graphql/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphql/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": ""
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET graphql/{default}</code></p>
+<!-- END_54e29140897474c4973797a7a3f24ef1 -->
+<!-- START_01ee0e24406bbb7f71e516ab27f53b7e -->
+<h2>graphql/{default}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/graphql/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphql/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST graphql/{default}</code></p>
+<!-- END_01ee0e24406bbb7f71e516ab27f53b7e -->
+<!-- START_4306232d7b0614f3e020f720a2be3e61 -->
+<h2>graphiql/{graphql_schema?}/{default}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/graphiql/1/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphiql/1/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": ""
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET graphiql/{graphql_schema?}/{default}</code></p>
+<!-- END_4306232d7b0614f3e020f720a2be3e61 -->
+<!-- START_18b0fb726c23dabde7373bd1edafb0eb -->
+<h2>graphiql/{graphql_schema?}/{default}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/graphiql/1/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphiql/1/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST graphiql/{graphql_schema?}/{default}</code></p>
+<!-- END_18b0fb726c23dabde7373bd1edafb0eb -->
+<!-- START_e9e2e0325698446184f4fd1613e895ec -->
+<h2>graphiql/{graphql_schema?}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/graphiql/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphiql/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET graphiql/{graphql_schema?}</code></p>
+<!-- END_e9e2e0325698446184f4fd1613e895ec -->
+<!-- START_cb7c69339a53477b3773bf17a25dcb09 -->
+<h2>graphiql/{graphql_schema?}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/graphiql/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/graphiql/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST graphiql/{graphql_schema?}</code></p>
+<!-- END_cb7c69339a53477b3773bf17a25dcb09 -->
+<!-- START_0c068b4037fb2e47e71bd44bd36e3e2a -->
+<h2>Authorize a client to access the user&#039;s account.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/oauth/authorize" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/authorize");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET oauth/authorize</code></p>
+<!-- END_0c068b4037fb2e47e71bd44bd36e3e2a -->
+<!-- START_e48cc6a0b45dd21b7076ab2c03908687 -->
+<h2>Approve the authorization request.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/oauth/authorize" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/authorize");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST oauth/authorize</code></p>
+<!-- END_e48cc6a0b45dd21b7076ab2c03908687 -->
+<!-- START_de5d7581ef1275fce2a229b6b6eaad9c -->
+<h2>Deny the authorization request.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/oauth/authorize" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/authorize");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE oauth/authorize</code></p>
+<!-- END_de5d7581ef1275fce2a229b6b6eaad9c -->
+<!-- START_a09d20357336aa979ecd8e3972ac9168 -->
+<h2>Authorize a client to access the user&#039;s account.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/oauth/token" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/token");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST oauth/token</code></p>
+<!-- END_a09d20357336aa979ecd8e3972ac9168 -->
+<!-- START_d6a56149547e03307199e39e03e12d1c -->
+<h2>Get all of the authorized tokens for the authenticated user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/oauth/tokens" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/tokens");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET oauth/tokens</code></p>
+<!-- END_d6a56149547e03307199e39e03e12d1c -->
+<!-- START_a9a802c25737cca5324125e5f60b72a5 -->
+<h2>Delete the given token.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/oauth/tokens/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/tokens/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE oauth/tokens/{token_id}</code></p>
+<!-- END_a9a802c25737cca5324125e5f60b72a5 -->
+<!-- START_abe905e69f5d002aa7d26f433676d623 -->
+<h2>Get a fresh transient token cookie for the authenticated user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/oauth/token/refresh" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/token/refresh");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST oauth/token/refresh</code></p>
+<!-- END_abe905e69f5d002aa7d26f433676d623 -->
+<!-- START_babcfe12d87b8708f5985e9d39ba8f2c -->
+<h2>Get all of the clients for the authenticated user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/oauth/clients" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/clients");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET oauth/clients</code></p>
+<!-- END_babcfe12d87b8708f5985e9d39ba8f2c -->
+<!-- START_9eabf8d6e4ab449c24c503fcb42fba82 -->
+<h2>Store a new client.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/oauth/clients" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/clients");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST oauth/clients</code></p>
+<!-- END_9eabf8d6e4ab449c24c503fcb42fba82 -->
+<!-- START_784aec390a455073fc7464335c1defa1 -->
+<h2>Update the given client.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X PUT "/oauth/clients/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/clients/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT oauth/clients/{client_id}</code></p>
+<!-- END_784aec390a455073fc7464335c1defa1 -->
+<!-- START_1f65a511dd86ba0541d7ba13ca57e364 -->
+<h2>Delete the given client.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/oauth/clients/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/clients/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE oauth/clients/{client_id}</code></p>
+<!-- END_1f65a511dd86ba0541d7ba13ca57e364 -->
+<!-- START_9e281bd3a1eb1d9eb63190c8effb607c -->
+<h2>Get all of the available scopes for the application.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/oauth/scopes" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/scopes");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET oauth/scopes</code></p>
+<!-- END_9e281bd3a1eb1d9eb63190c8effb607c -->
+<!-- START_9b2a7699ce6214a79e0fd8107f8b1c9e -->
+<h2>Get all of the personal access tokens for the authenticated user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/oauth/personal-access-tokens" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/personal-access-tokens");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET oauth/personal-access-tokens</code></p>
+<!-- END_9b2a7699ce6214a79e0fd8107f8b1c9e -->
+<!-- START_a8dd9c0a5583742e671711f9bb3ee406 -->
+<h2>Create a new personal access token for the user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/oauth/personal-access-tokens" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/personal-access-tokens");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST oauth/personal-access-tokens</code></p>
+<!-- END_a8dd9c0a5583742e671711f9bb3ee406 -->
+<!-- START_bae65df80fd9d72a01439241a9ea20d0 -->
+<h2>Delete the given token.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/oauth/personal-access-tokens/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/oauth/personal-access-tokens/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE oauth/personal-access-tokens/{token_id}</code></p>
+<!-- END_bae65df80fd9d72a01439241a9ea20d0 -->
+<!-- START_d7b7952e7fdddc07c978c9bdaf757acf -->
+<h2>Register api</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/api/register" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/register");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/register</code></p>
+<!-- END_d7b7952e7fdddc07c978c9bdaf757acf -->
+<!-- START_26083a9b982777e3d0ba4e9d83370f29 -->
+<h2>Display a listing of the resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/api/configurations" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/configurations");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/configurations</code></p>
+<!-- END_26083a9b982777e3d0ba4e9d83370f29 -->
+<!-- START_bdde0fbf97d59556716385ecd3342898 -->
+<h2>Store a newly created resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/api/configurations" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/configurations");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/configurations</code></p>
+<!-- END_bdde0fbf97d59556716385ecd3342898 -->
+<!-- START_f27942806025a32d26534e0e728c0568 -->
+<h2>Display the specified resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/api/configurations/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/configurations/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/configurations/{configuration}</code></p>
+<!-- END_f27942806025a32d26534e0e728c0568 -->
+<!-- START_21422cc4d209d02f1045ea466d0388bc -->
+<h2>Update the specified resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X PUT "/api/configurations/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/configurations/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/configurations/{configuration}</code></p>
+<p><code>PATCH api/configurations/{configuration}</code></p>
+<!-- END_21422cc4d209d02f1045ea466d0388bc -->
+<!-- START_06f02f4d64295dbf85bff01727ec4315 -->
+<h2>Remove the specified resource from storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/api/configurations/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/configurations/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/configurations/{configuration}</code></p>
+<!-- END_06f02f4d64295dbf85bff01727ec4315 -->
+<!-- START_54cb226e1c806f816f425980068f574f -->
+<h2>Display a listing of the resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/api/logs" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/logs");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/logs</code></p>
+<!-- END_54cb226e1c806f816f425980068f574f -->
+<!-- START_2954c52b6dd49610ce45068ac3110149 -->
+<h2>Store a newly created resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/api/logs" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/logs");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/logs</code></p>
+<!-- END_2954c52b6dd49610ce45068ac3110149 -->
+<!-- START_87ac3298a7783be0a9b1abd0131eaf97 -->
+<h2>Display the specified resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/api/logs/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/logs/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/logs/{log}</code></p>
+<!-- END_87ac3298a7783be0a9b1abd0131eaf97 -->
+<!-- START_c2f52a04404c9ff44f9a46c34989cf85 -->
+<h2>Update the specified resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X PUT "/api/logs/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/logs/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/logs/{log}</code></p>
+<p><code>PATCH api/logs/{log}</code></p>
+<!-- END_c2f52a04404c9ff44f9a46c34989cf85 -->
+<!-- START_38dadfb6acef1c515e02cfcaa31be340 -->
+<h2>Remove the specified resource from storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/api/logs/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/api/logs/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/logs/{log}</code></p>
+<!-- END_38dadfb6acef1c515e02cfcaa31be340 -->
+<!-- START_53be1e9e10a08458929a2e0ea70ddb86 -->
+<h2>/</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET /</code></p>
+<!-- END_53be1e9e10a08458929a2e0ea70ddb86 -->
+<!-- START_2ee0101268b5b74d08fe42d860ec3336 -->
+<h2>parse</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse</code></p>
+<!-- END_2ee0101268b5b74d08fe42d860ec3336 -->
+<!-- START_246742b3d14508f7b0ee8b1cd697e3d8 -->
+<h2>parse/category</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/category" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/category");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/category</code></p>
+<!-- END_246742b3d14508f7b0ee8b1cd697e3d8 -->
+<!-- START_3fb939611bffc6f5ee1e2a48ff73ae0d -->
+<h2>parse/category</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/category" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/category");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/category</code></p>
+<!-- END_3fb939611bffc6f5ee1e2a48ff73ae0d -->
+<!-- START_5bbde1354e052175bcd97ea5e461309a -->
+<h2>parse/category/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/category/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/category/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/category/add</code></p>
+<!-- END_5bbde1354e052175bcd97ea5e461309a -->
+<!-- START_648db07c2259b99fc7c052dd993ece79 -->
+<h2>parse/category/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/category/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/category/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/category/add</code></p>
+<!-- END_648db07c2259b99fc7c052dd993ece79 -->
+<!-- START_6152c804d83df69ad027bcb52716135d -->
+<h2>parse/manufacturer</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/manufacturer" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/manufacturer");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/manufacturer</code></p>
+<!-- END_6152c804d83df69ad027bcb52716135d -->
+<!-- START_3316cc5a0b04add6fa9d07cf71adaf11 -->
+<h2>parse/manufacturer</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/manufacturer" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/manufacturer");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/manufacturer</code></p>
+<!-- END_3316cc5a0b04add6fa9d07cf71adaf11 -->
+<!-- START_43b4335b9d07d47624022b88eeced347 -->
+<h2>parse/manufacturer/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/manufacturer/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/manufacturer/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/manufacturer/add</code></p>
+<!-- END_43b4335b9d07d47624022b88eeced347 -->
+<!-- START_05e0795465207405d6d2ca3e8dc994ae -->
+<h2>parse/manufacturer/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/manufacturer/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/manufacturer/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/manufacturer/add</code></p>
+<!-- END_05e0795465207405d6d2ca3e8dc994ae -->
+<!-- START_c7803732545574eda1c05492acc708c5 -->
+<h2>parse/product</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/product" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/product");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/product</code></p>
+<!-- END_c7803732545574eda1c05492acc708c5 -->
+<!-- START_7ce4f19d9ed9e4c6956b61e948b8f318 -->
+<h2>parse/product</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/product" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/product");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/product</code></p>
+<!-- END_7ce4f19d9ed9e4c6956b61e948b8f318 -->
+<!-- START_de2ea77884c03e7346e10cd8571a1545 -->
+<h2>parse/product/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/product/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/product/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/product/add</code></p>
+<!-- END_de2ea77884c03e7346e10cd8571a1545 -->
+<!-- START_fdf82a2c45f4ee5d8cf77133e356d83e -->
+<h2>parse/product/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/product/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/product/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/product/add</code></p>
+<!-- END_fdf82a2c45f4ee5d8cf77133e356d83e -->
+<!-- START_47490acd7016ff9c290a948e57a04c1f -->
+<h2>parse/node</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/node" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/node");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/node</code></p>
+<!-- END_47490acd7016ff9c290a948e57a04c1f -->
+<!-- START_3ce07d2b3519e4c74a879e7620d4150a -->
+<h2>parse/node</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/node" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/node");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/node</code></p>
+<!-- END_3ce07d2b3519e4c74a879e7620d4150a -->
+<!-- START_e62a91d5adff9af2da1dd4a0f5438a98 -->
+<h2>parse/subcategory</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/subcategory" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/subcategory");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/subcategory</code></p>
+<!-- END_e62a91d5adff9af2da1dd4a0f5438a98 -->
+<!-- START_b9b12635beeb9d54d9600fb9e2daf652 -->
+<h2>parse/subcategory</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/subcategory" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/subcategory");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/subcategory</code></p>
+<!-- END_b9b12635beeb9d54d9600fb9e2daf652 -->
+<!-- START_a651d4727a4237ea14cd8cfb05dba381 -->
+<h2>parse/subcategory/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/parse/subcategory/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/subcategory/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET parse/subcategory/add</code></p>
+<!-- END_a651d4727a4237ea14cd8cfb05dba381 -->
+<!-- START_7b3d1301b7866f71402e84598b8a4f3c -->
+<h2>parse/subcategory/add</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/parse/subcategory/add" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/parse/subcategory/add");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST parse/subcategory/add</code></p>
+<!-- END_7b3d1301b7866f71402e84598b8a4f3c -->
+<!-- START_e92bbe58bbb53a9f5060b65570daae89 -->
+<h2>configurations/search</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/configurations/search" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations/search");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "success": true,
+    "html": "&lt;tbody&gt;\n    \n    \n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"110\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.pagination &amp;gt; li &amp;gt; a&lt;\/td&gt;\n                &lt;td&gt;01_get_ProductList_pagination&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/110')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('110')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"111\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.product-cell h4.title &amp;gt; a&lt;\/td&gt;\n                &lt;td&gt;11_get_ProductList_Title_In_Category&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/111')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('111')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"112\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;#content h1.product-title&lt;\/td&gt;\n                &lt;td&gt;02_get_ProductInfo_Product_Name&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/112')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('112')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"113\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.product-category &amp;gt; a&lt;\/td&gt;\n                &lt;td&gt;03_get_ProductInfo_Category_URL&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/113')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('113')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"114\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.product-category &amp;gt; a&lt;\/td&gt;\n                &lt;td&gt;04_get_ProductInfo_Category_Name&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/114')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('114')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"115\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.price_wrapper &amp;gt; .price&lt;\/td&gt;\n                &lt;td&gt;05_get_ProductInfo_Price&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/115')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('115')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"116\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.product-gallery img&lt;\/td&gt;\n                &lt;td&gt;06_get_ProductInfo_MainImage_URL&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/116')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('116')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"117\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.desc&lt;\/td&gt;\n                &lt;td&gt;07_get_ProductInfo_Description&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/117')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('117')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"118\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.product--details .product--buybox .price--discount-icon&lt;\/td&gt;\n                &lt;td&gt;08_get_ProductInfo_Promotional&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/118')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('118')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"119\"&gt;&lt;\/td&gt;\n                &lt;td&gt;https:\/\/www.esmokercity.de&lt;\/td&gt;\n                &lt;td&gt;.product--details .product--buybox .price--line-through&lt;\/td&gt;\n                &lt;td&gt;09_get_ProductInfo_Old_Price&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;a class=\"btn btn-primary btn-sm vcenter\" title=\"Edit\"\n                       href=\"javascript:ajaxLoad('http:\/\/localhost\/configurations\/update\/119')\"&gt;\n                        &lt;i class=\"fa fa-edit\"&gt;&lt;\/i&gt;&lt;\/a&gt;   \n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('119')\" data-target=\"#DeleteModal\" class=\"btn btn-sm btn-danger vcenter\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n        \n&lt;\/tbody&gt;",
+    "total": 127
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET configurations/search</code></p>
+<!-- END_e92bbe58bbb53a9f5060b65570daae89 -->
+<!-- START_bdb1e8acbf092528a3e98091eec3f866 -->
+<h2>configurations/search</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/configurations/search" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations/search");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST configurations/search</code></p>
+<!-- END_bdb1e8acbf092528a3e98091eec3f866 -->
+<!-- START_69469dd021bed951d5ef287b0f93a60e -->
+<h2>configurations/myproductsDeleteAll</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/configurations/myproductsDeleteAll" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations/myproductsDeleteAll");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE configurations/myproductsDeleteAll</code></p>
+<!-- END_69469dd021bed951d5ef287b0f93a60e -->
+<!-- START_9e942d0acafe9bbee7f05aee374326d5 -->
+<h2>configurations</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/configurations" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET configurations</code></p>
+<!-- END_9e942d0acafe9bbee7f05aee374326d5 -->
+<!-- START_84e897fc661187566625785dfcbe8713 -->
+<h2>configurations/all</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/configurations/all" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations/all");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET configurations/all</code></p>
+<!-- END_84e897fc661187566625785dfcbe8713 -->
+<!-- START_6b4229dad926345b3833a896f98735e6 -->
+<h2>configurations/create</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/configurations/create" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations/create");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET configurations/create</code></p>
+<p><code>POST configurations/create</code></p>
+<!-- END_6b4229dad926345b3833a896f98735e6 -->
+<!-- START_04eaddba0aa7e3d2f605b920f3eb11fa -->
+<h2>configurations/update/{id}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/configurations/update/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations/update/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET configurations/update/{id}</code></p>
+<p><code>PUT configurations/update/{id}</code></p>
+<!-- END_04eaddba0aa7e3d2f605b920f3eb11fa -->
+<!-- START_71e66001bcce3649c820287743f0394c -->
+<h2>configurations/delete/{id}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/configurations/delete/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/configurations/delete/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE configurations/delete/{id}</code></p>
+<!-- END_71e66001bcce3649c820287743f0394c -->
+<!-- START_4347713614426a853c76ac5c51f08f4f -->
+<h2>logs/search</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/logs/search" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/logs/search");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "success": true,
+    "html": "&lt;tbody&gt;\n\n    \n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"22\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;1&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de&lt;\/td&gt;\n                &lt;td&gt;&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('22')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"23\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;6&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/eleaf\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan subcategory:save --subcat=https:\/\/dampfdorado.de\/eleaf\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('23')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"24\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;11&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan category:save --url=https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('24')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"25\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;11&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan category:save --url=https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('25')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"26\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;11&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan category:save --url=https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('26')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"27\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;11&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan category:save --url=https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('27')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"28\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;11&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan category:save --url=https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('28')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"29\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;11&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan category:save --url=https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('29')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"30\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;11&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan category:save --url=https:\/\/dampfdorado.de\/&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('30')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n                    &lt;tr&gt;\n                &lt;td&gt;&lt;input type=\"checkbox\" class=\"sub_chk\" data-id=\"31\"&gt;&lt;\/td&gt;\n                &lt;td&gt;Success&lt;\/td&gt;\n                &lt;td&gt;28&lt;\/td&gt;\n                &lt;td&gt;https:\/\/dampfdorado.de\/e-zigaretten&lt;\/td&gt;\n                &lt;td&gt;sudo php artisan hersteller:save --url=https:\/\/dampfdorado.de\/e-zigaretten&lt;\/td&gt;\n                &lt;td align=\"center\"&gt;\n                    &lt;input type=\"hidden\" name=\"_method\" value=\"delete\"\/&gt;\n\n                    &lt;a href=\"javascript:;\" data-toggle=\"modal\" onclick=\"deleteData('31')\" data-target=\"#DeleteModal\" class=\"btn btn-xs btn-danger\"&gt;&lt;i class=\"fa fa-trash\"&gt;&lt;\/i&gt;&lt;\/a&gt;\n\n                &lt;\/td&gt;\n            &lt;\/tr&gt;\n        \n&lt;\/tbody&gt;\n ",
+    "total": 487
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET logs/search</code></p>
+<!-- END_4347713614426a853c76ac5c51f08f4f -->
+<!-- START_d67785f5952b3d000c42a378eba0a734 -->
+<h2>logs/search</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/logs/search" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/logs/search");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST logs/search</code></p>
+<!-- END_d67785f5952b3d000c42a378eba0a734 -->
+<!-- START_dbea41188930c37317b4248d9b6456a0 -->
+<h2>logs/myproductsDeleteAll</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/logs/myproductsDeleteAll" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/logs/myproductsDeleteAll");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE logs/myproductsDeleteAll</code></p>
+<!-- END_dbea41188930c37317b4248d9b6456a0 -->
+<!-- START_f497f1f7d005ed681f077661b5a3f11b -->
+<h2>logs</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/logs" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/logs");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET logs</code></p>
+<!-- END_f497f1f7d005ed681f077661b5a3f11b -->
+<!-- START_7ad70dcb6fe1ebbdfe679e58b1e40af6 -->
+<h2>logs/all</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/logs/all" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/logs/all");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET logs/all</code></p>
+<!-- END_7ad70dcb6fe1ebbdfe679e58b1e40af6 -->
+<!-- START_dc7a4cd7e896cab1d68148f31719dbc3 -->
+<h2>logs/delete/{id}</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE "/logs/delete/1" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/logs/delete/1");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE logs/delete/{id}</code></p>
+<!-- END_dc7a4cd7e896cab1d68148f31719dbc3 -->
+<!-- START_4e9fc3df6ebb2a43640615862b5850b2 -->
+<h2>statistics</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET -G "/statistics" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/statistics");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET statistics</code></p>
+<!-- END_4e9fc3df6ebb2a43640615862b5850b2 -->
+<!-- START_265b4e8bac1c6c7197dabb81f2fe480f -->
+<h2>Upload file to server.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/ajax/uploader/upload" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/ajax/uploader/upload");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST ajax/uploader/upload</code></p>
+<!-- END_265b4e8bac1c6c7197dabb81f2fe480f -->
+<!-- START_13fefec785b3858e23348f9c30d859e1 -->
+<h2>Delete file from server.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/ajax/uploader/delete" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/ajax/uploader/delete");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST ajax/uploader/delete</code></p>
+<!-- END_13fefec785b3858e23348f9c30d859e1 -->
+<!-- START_7a649048010a6c7aae88db8d183e0dcb -->
+<h2>Create preview image.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST "/ajax/uploader/preview" </code></pre>
+<pre><code class="language-javascript">const url = new URL("/ajax/uploader/preview");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST ajax/uploader/preview</code></p>
+<!-- END_7a649048010a6c7aae88db8d183e0dcb -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>

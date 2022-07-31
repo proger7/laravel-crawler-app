@@ -1,0 +1,12 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+@import './modules/bs-dialog/bootstrap-dialog';
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import '~@jkryszto/mdb-for-laravel/scss/mdb';

@@ -1,0 +1,234 @@
+[
+    {
+        "rank": 1,
+        "title": "Psytrance Guide",
+        "url": "http://psytranceguide.com/",
+        "points": 130,
+        "username": "turrini",
+        "comments": 2
+    },
+    {
+        "rank": 2,
+        "title": "A Novel Concept: Silent Book Clubs Offer Introverts a Space to Socialize",
+        "url": "https://www.npr.org/2019/08/12/740897970/a-novel-concept-silent-book-clubs-offer-introverts-a-space-to-socialize",
+        "points": 36,
+        "username": "sohkamyung",
+        "comments": 1
+    },
+    {
+        "rank": 3,
+        "title": "Do we need to worry about artificial stupidity?",
+        "url": "https://www.thinkautomation.com/automation-ethics/do-we-need-to-worry-about-artificial-stupidity/",
+        "points": 59,
+        "username": "roxyabercrombie",
+        "comments": 3
+    },
+    {
+        "rank": 4,
+        "title": "What Germans Are Reading",
+        "url": "https://www.the-american-interest.com/2019/08/03/what-germans-are-reading/",
+        "points": 73,
+        "username": "objections",
+        "comments": 4
+    },
+    {
+        "rank": 5,
+        "title": "Planet: Imaging the entire Earth every day",
+        "url": "https://nbremer.github.io/planet-globe/",
+        "points": 284,
+        "username": "NaOH",
+        "comments": 9
+    },
+    {
+        "rank": 6,
+        "title": "How to Provide Great Feedback When You're Not in Charge (2016)",
+        "url": "https://fs.blog/2016/02/provide-feedback/",
+        "points": 35,
+        "username": "prostoalex",
+        "comments": 4
+    },
+    {
+        "rank": 7,
+        "title": "FAA Bans Recalled Apple Laptops from Flights",
+        "url": "https://www.bloomberg.com/news/articles/2019-08-13/u-s-regulator-bans-recalled-apple-laptops-from-flights",
+        "points": 191,
+        "username": "jmsflknr",
+        "comments": 12
+    },
+    {
+        "rank": 8,
+        "title": "The Feynman Lectures on Physics: Algebra (1963)",
+        "url": "http://www.feynmanlectures.caltech.edu/I_22.html",
+        "points": 107,
+        "username": "signa11",
+        "comments": 8
+    },
+    {
+        "rank": 9,
+        "title": "Mitre Systems Engineering Guide (2014) [pdf]",
+        "url": "http://www.mitre.org/sites/default/files/publications/se-guide-book-interactive.pdf",
+        "points": 59,
+        "username": "mindcrime",
+        "comments": 7
+    },
+    {
+        "rank": 10,
+        "title": "Translating and Interpreting Chinese Philosophy",
+        "url": "https://plato.stanford.edu/entries/chinese-translate-interpret/",
+        "points": 8,
+        "username": "bookofjoe",
+        "comments": 2
+    },
+    {
+        "rank": 11,
+        "title": "The Shady World of Repair Manuals: Copyrighting for Planned Obsolescence (2012)",
+        "url": "https://www.wired.com/2012/11/cease-and-desist-manuals-planned-obsolescence/",
+        "points": 91,
+        "username": "segfaultbuserr",
+        "comments": 10
+    },
+    {
+        "rank": 12,
+        "title": "Recycling of plastics enabled by dynamic covalent diketoenamine bonds (2018) [pdf]",
+        "url": "http://ipo.lbl.gov/wp-content/uploads/sites/8/2018/03/Helms-Closed-Loop-Recycling-Nature-Materials.pdf",
+        "points": 41,
+        "username": "inflatableDodo",
+        "comments": 8
+    },
+    {
+        "rank": 13,
+        "title": "NEC shows ‘flying car’ hovering steadily for minute",
+        "url": "https://www.apnews.com/2d4ce8955bc04032928afdf97ed42818",
+        "points": 50,
+        "username": "prostoalex",
+        "comments": 8
+    },
+    {
+        "rank": 14,
+        "title": "Milky Way’s Black Hole Just Flared, Growing 75 Times as Bright for a Few Hours",
+        "url": "https://www.universetoday.com/143150/milky-ways-black-hole-just-flared-growing-75-times-as-bright-for-a-few-hours/#more-143150",
+        "points": 494,
+        "username": "cyanbane",
+        "comments": 15
+    },
+    {
+        "rank": 15,
+        "title": "Texas Power Prices Briefly Surpass $9k Amid Scorching Heat",
+        "url": "https://www.bloomberg.com/news/articles/2019-08-12/searing-texas-heat-pushes-power-prices-to-near-record-levels",
+        "points": 55,
+        "username": "jweir",
+        "comments": 8
+    },
+    {
+        "rank": 16,
+        "title": "Building a vacuum tube computer",
+        "url": "https://www.ludd.ltu.se/~ragge/vtc/",
+        "points": 77,
+        "username": "ChickeNES",
+        "comments": 11
+    },
+    {
+        "rank": 17,
+        "title": "Data Breach Has Exposed Millions of Fingerprint and Facial Recognition Records",
+        "url": "https://www.forbes.com/sites/zakdoffman/2019/08/14/new-data-breach-has-exposed-millions-of-fingerprint-and-facial-recognition-records-report/",
+        "points": 16,
+        "username": "draugadrotten",
+        "comments": 1
+    },
+    {
+        "rank": 18,
+        "title": "Root: CERN's scientific data analysis framework for C++",
+        "url": "https://root.cern.ch/",
+        "points": 105,
+        "username": "z3phyr",
+        "comments": 12
+    },
+    {
+        "rank": 19,
+        "title": "Facebook Paid Contractors to Transcribe Users’ Audio Chats",
+        "url": "https://finance.yahoo.com/news/facebook-paid-hundreds-contractors-transcribe-190743545.html",
+        "points": 8,
+        "username": "Vaslo",
+        "comments": 30
+    },
+    {
+        "rank": 20,
+        "title": "Major breach found in biometrics system used by banks, police and defence firms",
+        "url": "https://www.theguardian.com/technology/2019/aug/14/major-breach-found-in-biometrics-system-used-by-banks-uk-police-and-defence-firms",
+        "points": 65,
+        "username": "Hard_Space",
+        "comments": 3
+    },
+    {
+        "rank": 21,
+        "title": "Fewer Than Half of Google Searches Now Result in a Click",
+        "url": "https://sparktoro.com/blog/less-than-half-of-google-searches-now-result-in-a-click/",
+        "points": 645,
+        "username": "adamcarson",
+        "comments": 18
+    },
+    {
+        "rank": 22,
+        "title": "Fire One, Fire Ten: Implications of the Torpedo Scandal of World War II (2018)",
+        "url": "https://thestrategybridge.org/the-bridge/2018/2/8/fire-one-fire-ten-implications-of-the-torpedo-scandal-of-world-war-ii",
+        "points": 33,
+        "username": "smacktoward",
+        "comments": 7
+    },
+    {
+        "rank": 23,
+        "title": "Upgrade your cargo cult for the win (2017)",
+        "url": "https://meaningness.com/metablog/upgrade-your-cargo-cult",
+        "points": 7,
+        "username": "mathgenius",
+        "comments": 3
+    },
+    {
+        "rank": 24,
+        "title": "Largest Contentful Paint",
+        "url": "https://web.dev/largest-contentful-paint/",
+        "points": 17,
+        "username": "feross",
+        "comments": 5
+    },
+    {
+        "rank": 25,
+        "title": "Indigenous Women Are Publishing the First Maya Works in over 400 Years",
+        "url": "https://www.atlasobscura.com/articles/indigenous-maya-women-bookmakers-collective-workshop",
+        "points": 50,
+        "username": "bryanrasmussen",
+        "comments": 11
+    },
+    {
+        "rank": 26,
+        "title": "Turkmenistan on the brink of collapse?",
+        "url": "https://edition.cnn.com/2019/08/10/asia/turkmenistan-caspian-sea-intl-hnk/index.html",
+        "points": 94,
+        "username": "Tomte",
+        "comments": 14
+    },
+    {
+        "rank": 27,
+        "title": "Proteins That May Restore Damaged Sound-Detecting Cells in the Ear",
+        "url": "https://www.hopkinsmedicine.org/news/newsroom/news-releases/researchers-find-proteins-that-might-restore-damaged-sound-detecting-cells-in-the-ear",
+        "points": 466,
+        "username": "laurex",
+        "comments": 21
+    },
+    {
+        "rank": 29,
+        "title": "Dan Bunten and M.U.L.E. (2013)",
+        "url": "https://www.filfre.net/2013/02/dan-bunten-and-m-u-l-e/",
+        "points": 44,
+        "username": "pmoriarty",
+        "comments": 11
+    },
+    {
+        "rank": 30,
+        "title": "Media Observatory – Quantifying Media Bias",
+        "url": "http://mediaobservatory.com",
+        "points": 18,
+        "username": "ThouYS",
+        "comments": 5
+    }
+]
